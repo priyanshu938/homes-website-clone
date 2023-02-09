@@ -48,6 +48,8 @@ h6 {
   --primary-gray-color: #949fb7;
   --secondary-gray-color: #e5e9f2;
   --background-gray-color: #f6f6f7;
+  --button-gray-color: #c1c8d7;
+  --border-gray-color: #d9dde7;
   --primary-green-color: #25df8f;
   --primary-white-color: #ffffff;
 }
@@ -56,6 +58,12 @@ li {
 }
 a {
   text-decoration: none;
+  color: black;
+}
+::-webkit-input-placeholder {
+  color: var(--primary-gray-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
 }
 /* utility classes */
 .flex {
@@ -64,5 +72,84 @@ a {
 .container {
   margin-left: 5rem;
   margin-right: 5rem;
+  padding-block: 1.5rem;
+}
+.input-box {
+  border: none;
+}
+.input-box:focus {
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navbar */
+.nav-div {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.first-half {
+  gap: 2rem;
+}
+.input-search {
+  gap: 0.5rem;
+  border: 1px solid var(--border-gray-color);
+  justify-content: space-evenly;
+  align-items: center;
+  padding-inline: 10px;
+  padding-block: 3px;
+  border-radius: 5px;
+}
+
+.nav-links {
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-links li a {
+  color: var(--secondary-text-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* home section */
+.home-left {
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-basis: 50%;
+  gap: 1rem;
+}
+.home-emoji {
+  font-size: 4rem;
+}
+.home-left p {
+  font-size: 2.4rem;
+  color: var(--primary-text-color);
+  font-weight: bold;
+}
+.input-search-home {
+  gap: 0.5rem;
+  border: 1px solid var(--border-gray-color);
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  padding-inline: 10px;
+  padding-block: 3px;
+  border-radius: 5px;
+}
+.home-buttons {
+  justify-content: space-between;
+  width: 80%;
   padding-block: 1rem;
+}
+.home-button {
+  padding: 0.5rem;
+  border: 1px solid;
+  background-color: var(--button-gray-color);
+  color: var(--primary-white-color);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.all-properties-button {
+  background-color: var(--primary-green-color);
 }
