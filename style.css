@@ -85,7 +85,6 @@ a {
 /* navbar */
 .nav-div {
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .first-half {
   gap: 2rem;
@@ -99,6 +98,9 @@ a {
   padding-block: 3px;
   border-radius: 5px;
 }
+.hamburger {
+  display: none;
+}
 
 .nav-links {
   justify-content: center;
@@ -109,6 +111,11 @@ a {
   color: var(--secondary-text-color);
   font-size: 20px;
   font-weight: bold;
+}
+.second-half {
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 /* home section */
