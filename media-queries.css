@@ -4,6 +4,9 @@
     margin-right: 3rem;
     padding-block: 1rem;
   }
+}
+
+@media screen and (max-width: 900px) {
   .hamburger {
     display: block;
   }
@@ -23,69 +26,59 @@
     left: 0;
   }
 }
-
-@media screen and (max-width: 767px) {
-  .why-cards {
-    justify-content: space-evenly;
-  }
-  .why-card {
-    max-width: 18rem;
-  }
-
-  .article-cards {
-    justify-content: space-evenly;
-  }
-  .article-card {
-    max-width: 18rem;
-  }
-  .footer-logo-img {
-    text-align: center;
-  }
-  .footer-div {
-    flex-direction: column;
-    gap: 2rem;
+@media screen and (max-width: 936px) {
+  .cards {
     justify-content: center;
-    align-items: center;
-  }
-  .first-half,
-  .second-half {
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  .second-half {
-    align-items: center;
-  }
-  .part-1,
-  .part-2 {
-    align-items: center;
-  }
-  .footer-icons {
-    gap: 1rem;
+    gap: 2rem;
   }
 }
 
-@media screen and (max-width: 479px) {
-  .heading {
-    font-size: 2rem;
+@media screen and (max-width: 800px) {
+  .container {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-block: 0.5rem;
   }
-  .heading2 {
-    font-size: 1.5rem;
-  }
-  .heading3 {
-    font-size: 1rem;
+  .home-left {
+    flex-basis: 90%;
   }
   .home {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+      url("./img/mobile-img.png");
+    color: var(--primary-white-color);
   }
-
-  .home-content {
-    width: 90%;
+  .home-left p {
+    color: var(--primary-white-color);
   }
-
-  .home-image {
-    width: 50%;
+  .home-input {
+    background-color: transparent;
+    color: var(--primary-white-color);
+  }
+  .home-input::-webkit-input-placeholder {
+    color: var(--primary-white-color);
+  }
+  .hide {
+    display: none;
+  }
+  .apartment-head h2 {
+    font-size: 1.3rem;
+  }
+  .card {
+    width: calc(50% - 2rem);
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .apartment-head h2 {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .card {
+    width: calc(90% - 1rem);
+    max-width: 90%;
   }
 }
